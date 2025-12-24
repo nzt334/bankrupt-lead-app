@@ -1,0 +1,52 @@
+{
+  "telegram": {
+    "bot_token": "YOUR_BOT_TOKEN_HERE",
+    "channel_id": "-1001234567890",
+    "channel_username": "@SpishiSpisat",
+    "api_url": "https://api.telegram.org/bot{token}"
+  },
+  "web_app": {
+    "url": "https://output.jsbin.com/gixadekugi/latest",
+    "name": "profii",
+    "description": "Lead generation form for bankruptcy cases"
+  },
+  "lead_form": {
+    "fields": [
+      "name",
+      "phone",
+      "email",
+      "debt_amount",
+      "situation"
+    ],
+    "required_fields": ["name", "phone", "email", "debt_amount"]
+  },
+  "storage": {
+    "type": "json",
+    "path": "./data/leads.json",
+    "backup_path": "./data/leads.backup.json"
+  },
+  "notifications": {
+    "enabled": true,
+    "channel": "@SpishiSpisat",
+    "template": "lead_notification.html"
+  },
+  "analytics": {
+    "track_conversions": true,
+    "track_sources": true,
+    "reports_path": "./reports"
+  },
+  "automation": {
+    "auto_post": true,
+    "post_interval_hours": 6,
+    "max_daily_posts": 4,
+    "enabled_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+    "posting_hours": ["09:00", "12:00", "15:00", "18:00"]
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": "./logs/bot.log",
+    "max_bytes": 10485760,
+    "backup_count": 5
+  }
+}
