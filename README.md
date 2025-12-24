@@ -33,7 +33,7 @@ Automated system for promoting the Спеши Списать (@SpishiSpisat) Tel
 - **Function**: Lead distribution and bot responses
 
 ### 3. Lead Generation Form
-- **URL**: https://output.jsbin.com/gixadekugi/latest
+- **URL**: https://output.jsbin.com/jificuvixi/1/latest
 - **Fields**: Name, Phone, Email, Debt Amount, Situation
 - **Backend**: JSON-based storage
 
